@@ -34,5 +34,15 @@ public class SearchTest {
 
         assertEquals(0, LinearSearch.search(a,10));
     }
-
+    @Test
+    @DisplayName("Test empty array")
+    void fail(){
+        System.out.println("This test is designed to fail");
+    }
+ @Test
+@DisplayName("Test empty array")
+void fail(){
+    System.out.println("This test is designed to fail");
+    assertEquals(1, LinearSearch.search(arr,1)); 
+}
 }
